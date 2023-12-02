@@ -5,7 +5,7 @@ def signup(name, password):
     password = "".join(password)
     
     with open("user/userinfo.csv", "a", encoding='utf-8') as uf:
-        uf.write(f"{name},{password}\n")
+        uf.write(f"{name},{password},3000\n")
 
 
 
