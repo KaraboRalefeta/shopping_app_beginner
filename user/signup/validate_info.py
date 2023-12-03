@@ -12,4 +12,3 @@ def user_exit(username):
                         return True
     except:      
         return False
-    

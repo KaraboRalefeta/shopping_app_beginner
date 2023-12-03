@@ -16,8 +16,3 @@ def signup(name, password):
     }
     with open("user/userinfo.json", "w", encoding='utf-8') as uf:
         json.dump(users, uf, indent = 4)
-
-
-
-signup("karabo", "prince")
-signup("prince", "karabo")
