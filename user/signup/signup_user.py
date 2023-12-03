@@ -12,8 +12,8 @@ def signup(name, password):
         users = {}
     users[name] = {
         "password" : password,
-        "amount": 3000
+        "amount": 3000,
+        "admin": False
     }
     with open("user/userinfo.json", "w", encoding='utf-8') as uf:
         json.dump(users, uf, indent = 4)
-
