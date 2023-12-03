@@ -19,4 +19,5 @@ def signup(name, password):
 
 
 
-        
+signup("karabo", "prince")
+signup("prince", "karabo")
