@@ -1,8 +1,8 @@
 from user.signup.validate_info import user_exit
 from user.login.validate_admin import admin_valid
 import json
-def upgrade_user(admin, user):
-    if admin_valid(admin):
+def upgrade_user(admin, password, user):
+    if admin_valid(admin, password):
         if user_exit(user):
             with open("user/userinfo.json", "r") as f:
                 users = json.load(f)
