@@ -1,5 +1,5 @@
 import json
-import users.validate_admin.valid_admin as validate_admin
+import user.login.validate_admin as validate_admin
 def delete_user_function(username, password, admin_username, admin_password):
     try:
         with open("user/userinfo.json", mode = "r") as uf:
