@@ -11,4 +11,3 @@ def adding_pro(product_name, cost, description):
         products[product_name] = {"price": cost, "Desctiption" : description}
         json.dump(products, jf, indent= 4)
         return True
-adding_pro("apple", 150, "A doctor a day keeps the apple away")
